@@ -1,0 +1,27 @@
+[
+  {
+    "Key": "API_URL",
+    "Value": "https://reqres.in/api/"
+  },
+  {
+    "Key": "API_USERS",
+    "Value": "https://reqres.in/api/users"
+  },
+  
+  {
+    "Key": "TEST_USER_FIRST_NAME",
+    "Value": "Ion"
+  },
+  {
+    "Key": "TEST_USER_LAST_NAME",
+    "Value": "Testulescu"
+  },
+  {
+    "Key": "TEST_USER_EMAIL",
+    "Value": "ion.testulescu@reqres.in"
+  },
+  {
+    "Key": "TEST_USER_JOB",
+    "Value": "Test_Engineer"
+  }
+]
