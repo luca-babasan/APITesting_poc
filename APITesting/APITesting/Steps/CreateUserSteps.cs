@@ -17,14 +17,16 @@ namespace APITesting.Steps
         private HttpResponseMessage _httpResponse;
         private readonly SettingsProvider settingsProvider;
         private CreateUserRequest createUserRequest;
+        private CreateUserResponse createUserResponse;
         private string jsonResponse;
 
-        public CreateUserSteps(SettingsProvider settingsProvider, CreateUserRequest createUserRequest)
+        public CreateUserSteps(SettingsProvider settingsProvider, CreateUserRequest createUserRequest, CreateUserResponse createUserResponse)
         {
             this.settingsProvider = settingsProvider;
-            this.createUserRequest = createUserRequest;  
+            this.createUserRequest = createUserRequest;
+            this.createUserResponse = createUserResponse;
         }
-        
+
         [Given(@"I populate the API call")]
         public void GivenIPopulateTheAPICall()
         {
@@ -71,7 +73,7 @@ namespace APITesting.Steps
         public void ThenTheUserProfileIsCreated()
         {
             Console.WriteLine(jsonResponse.ToString());
-            jsonResponse.CompareTo(createUserRequest.ToString());
+            jsonResponse.CompareTo(createUserResponse.ToString());
         }
     }
 }
