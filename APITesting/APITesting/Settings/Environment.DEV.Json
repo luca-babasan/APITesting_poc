@@ -7,7 +7,6 @@
     "Key": "API_USERS",
     "Value": "https://reqres.in/api/users"
   },
-  
   {
     "Key": "TEST_USER_FIRST_NAME",
     "Value": "Ion"
